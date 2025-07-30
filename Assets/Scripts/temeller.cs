@@ -108,6 +108,32 @@ public class temeller : MonoBehaviour
           Debug.Log("Puan" + puan);
         */
 
+        //Atama Operatörleri  = , += , -= , *= , /=
+        /*
+        int Score;// tanýmladýk
+        Score = 10;// deðer atadýk
+        Score += 10;
+        Debug.Log("Skorumuz : " + Score);
+        Score -= 5;
+        Debug.Log("Skorumuz : " + Score);
+        Score *= 2;
+        Debug.Log("Skorumuz : " + Score);
+        Score /= 5;
+        Debug.Log("Skorumuz : " + Score);
+        */
+
+        // iliþkisel operatörler   <, >, <=, >=, != ,==
+      /*  int sayi1 = 15;
+        int sayi2 = 25;
+        Debug.Log(sayi1 > sayi2);
+        Debug.Log(sayi1 < sayi2);
+        Debug.Log(sayi1 <= sayi2);
+        Debug.Log(sayi1 >= sayi2);
+        Debug.Log(sayi1 != sayi2); // != Eþit deðilse 
+        Debug.Log(sayi1 == sayi2); // == Eþitse 
+      */
+
+
 
 
 
