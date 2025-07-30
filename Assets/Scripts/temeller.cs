@@ -53,14 +53,45 @@ public class temeller : MonoBehaviour
         //Aritmetik operatörler  + , - , /,  *
 
         //hard code
-        int sayi1 = 10;
-        int sayi2 = 20;
-        int toplam=sayi1+ sayi2;
-        Debug.Log("SAyýlarýn Toplamý :  " + toplam);
+        /* int sayi1 = 10;
+         int sayi2 = 20;
+         int toplam=sayi1+ sayi2;
+         Debug.Log("SAyýlarýn Toplamý :  " + toplam);
 
-        // dinamik fakat start içinde 
-        int toplam2 = say1 + say2;
-        Debug.Log("girilen sayýlarýn Toplamý " + toplam2);
+         // dinamik fakat start içinde 
+         int toplam2 = say1 + say2;
+         Debug.Log("girilen sayýlarýn Toplamý " + toplam2);
+        */
+
+       /* int sayi1 = 15;
+        int sayi2 = 5;
+        int fark = sayi1 - sayi2;
+        Debug.Log("sayýlarýn Farký : " + fark);
+
+        int sayi11 = 15;
+        int sayi22 = 5;
+
+        int carpim = sayi11 * sayi22;
+        Debug.Log("sayýlarýn Çarpýmý : " + carpim);
+
+        int sayim1 = 15;
+        int sayim2 = 5;
+        float bolme = sayim1 / sayim2;
+        Debug.Log("sayýlarýn bolümü : " + bolme);
+
+        // sayýnýn modu    a%b   a'nýn b'ye bölümünden kalan
+
+        int a = 15;
+        int b = 10;
+
+        int kalan = a % b;
+        Debug.Log(a+" sayýsýn "+b+" sayýsýna bölümünden kalan : " + kalan);
+       */
+
+
+
+
+
 
 
 
@@ -68,8 +99,8 @@ public class temeller : MonoBehaviour
     private void Update()
     {
         // Debug.Log("Puan : " + puan);// konsola mesaj verdiriyoruz.
-        
-       
+
+
     }
 
 
