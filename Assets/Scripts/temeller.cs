@@ -1,10 +1,12 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class temeller : MonoBehaviour
 {
     [SerializeField] public int puan;
-
-
+    public bool isDeath;
+    [SerializeField] public int say1;
+    [SerializeField] public int say2;
     private void Start()
     {
         //Giriþ
@@ -24,17 +26,41 @@ public class temeller : MonoBehaviour
 
         //String Tanýmlama
 
-        string adSoyad = "Ali UYSUN";
-        string kurum = "ERTEV";
-        string sehir = "BURSA";
+        /* string adSoyad = "Ali UYSUN";
+         string kurum = "ERTEV";
+         string sehir = "BURSA";
 
 
-        Debug.Log("sayýn : " + adSoyad );
-        Debug.Log("Kurum : " + kurum);
-        Debug.Log("Þehir : " + sehir);
+         Debug.Log("sayýn : " + adSoyad );
+         Debug.Log("Kurum : " + kurum);
+         Debug.Log("Þehir : " + sehir);
+        */
+
+        // char tanýmlama
+
+        /*  char cinsiyet = 'E';
+          Debug.Log("Cinsiyetiniz : " + cinsiyet);
 
 
+          // Boolean Tanýmlama
 
+
+          isDeath = false;
+
+          Debug.Log("öldü mü ? " +isDeath);
+        */
+
+        //Aritmetik operatörler  + , - , /,  *
+
+        //hard code
+        int sayi1 = 10;
+        int sayi2 = 20;
+        int toplam=sayi1+ sayi2;
+        Debug.Log("SAyýlarýn Toplamý :  " + toplam);
+
+        // dinamik fakat start içinde 
+        int toplam2 = say1 + say2;
+        Debug.Log("girilen sayýlarýn Toplamý " + toplam2);
 
 
 
@@ -43,6 +69,7 @@ public class temeller : MonoBehaviour
     {
         // Debug.Log("Puan : " + puan);// konsola mesaj verdiriyoruz.
         
+       
     }
 
 
