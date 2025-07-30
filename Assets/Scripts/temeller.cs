@@ -63,30 +63,55 @@ public class temeller : MonoBehaviour
          Debug.Log("girilen sayýlarýn Toplamý " + toplam2);
         */
 
-       /* int sayi1 = 15;
-        int sayi2 = 5;
-        int fark = sayi1 - sayi2;
-        Debug.Log("sayýlarýn Farký : " + fark);
+        /* int sayi1 = 15;
+         int sayi2 = 5;
+         int fark = sayi1 - sayi2;
+         Debug.Log("sayýlarýn Farký : " + fark);
 
-        int sayi11 = 15;
-        int sayi22 = 5;
+         int sayi11 = 15;
+         int sayi22 = 5;
 
-        int carpim = sayi11 * sayi22;
-        Debug.Log("sayýlarýn Çarpýmý : " + carpim);
+         int carpim = sayi11 * sayi22;
+         Debug.Log("sayýlarýn Çarpýmý : " + carpim);
 
-        int sayim1 = 15;
-        int sayim2 = 5;
-        float bolme = sayim1 / sayim2;
-        Debug.Log("sayýlarýn bolümü : " + bolme);
+         int sayim1 = 15;
+         int sayim2 = 5;
+         float bolme = sayim1 / sayim2;
+         Debug.Log("sayýlarýn bolümü : " + bolme);
 
-        // sayýnýn modu    a%b   a'nýn b'ye bölümünden kalan
+         // sayýnýn modu    a%b   a'nýn b'ye bölümünden kalan
 
-        int a = 15;
-        int b = 10;
+         int a = 15;
+         int b = 10;
 
-        int kalan = a % b;
-        Debug.Log(a+" sayýsýn "+b+" sayýsýna bölümünden kalan : " + kalan);
-       */
+         int kalan = a % b;
+         Debug.Log(a+" sayýsýn "+b+" sayýsýna bölümünden kalan : " + kalan);
+        */
+
+
+        // Tekli Operatörler  x++,x-- ,++x,--x
+
+        //x++ =     x=x+1  
+        //x-- =    x=x-1
+        //++x    önce 1 artýr sonra ata
+
+
+        /* 
+         * int puan = 0;
+          puan++;
+          puan++;
+          puan++;
+          puan--;
+          puan--;
+          ++puan;
+          --puan;
+          Debug.Log("Puan" + puan);
+        */
+
+
+
+
+
 
 
 
