@@ -12,6 +12,9 @@ public class temeller : MonoBehaviour
     [SerializeField] public int sinav1;
     [SerializeField] public int sinav2;
     [SerializeField] public int performansNotu;
+    [SerializeField] public int aci1;
+    [SerializeField] public int aci2;
+    [SerializeField] public int aci3;
     private void Start()
     {
         //Giriþ
@@ -206,16 +209,27 @@ public class temeller : MonoBehaviour
           %25 indirim yaparak “Ödenecek miktar, indirimden sonra ….. TL’dir.” çýktýlarýný veren kodu yazýnýz.  */
 
         //ÇözümBir
-        int toplam = sinav1 + sinav2+performansNotu;
-        float ortalama = toplam / 3f;
-        if (ortalama >= 50)
-        {
-            Debug.Log("Baþarýlý");
-        }
-        else
-        {
+        /* int toplam = sinav1 + sinav2+performansNotu;
+         float ortalama = toplam / 3f;
+         if (ortalama >= 50)
+         {
+             Debug.Log("Baþarýlý");
+         }
+         else
+         {
 
-            Debug.Log("Baþarýsýz");
+             Debug.Log("Baþarýsýz");
+         }
+        */
+        //çözüm2
+
+        if ((aci1 + aci2 + aci3) == 180)
+        {
+            Debug.Log("üçgendir");
+        }
+        else 
+        {
+            Debug.Log("Üçgen deðildir");
         }
 
 
