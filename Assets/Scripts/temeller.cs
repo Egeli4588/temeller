@@ -540,11 +540,37 @@ public class temeller : MonoBehaviour
         Cikarma(10, 5);
         Carpma(11, 5);
         Bolme(12, 3);
+        Cikarma(10, 5, 2);
         // parametre alan deðer döndürmeyen foknsiyon kullanarak 4 iþlemi gerçekleþtiren fonksiyonlarý yazýnýz
 
 
+        // hem parametre alan hemde deðer döndüren fonksiyon kullanarak 4 iþlemi gerçekleþtren fonk yazýnýz
 
+        int benimIslem = Toplamam(7, 12);
+        Debug.Log("Deðer Döndüren ve parametre alan metod " + benimIslem);
+        int benimIslem2 = Cikarmam(18, 12);
+        Debug.Log("Deðer Döndüren ve parametre alan metod " + benimIslem);
+        int benimIslem3 = Carpmam(7, 12);
+        Debug.Log("Deðer Döndüren ve parametre alan metod " + benimIslem);
+        int benimIslem4= Bolmem(24, 12);
+        Debug.Log("Deðer Döndüren ve parametre alan metod " + benimIslem);
+    }
 
+    int Toplamam(int a, int b)
+    {
+        return a + b;
+    }
+    int Cikarmam(int a, int b)
+    {
+        return a - b;
+    }
+    int Carpmam(int a, int b)
+    {
+        return a * b;
+    }
+    int Bolmem(int a, int b)
+    {
+        return a / b;
     }
 
     void Ilkfonksiyonum()
@@ -552,25 +578,32 @@ public class temeller : MonoBehaviour
         Debug.Log("merhaba bu benim ilk fonksiyonum");
     }
 
-    public void Toplama(int a, int b)
+    void Toplama(int a, int b)
     {
 
         print("sayýlarýn Toplamý " + (a + b));
 
     }
-    public void Cikarma(int a, int b)
+    void Cikarma(int a, int b)
     {
         print("sayýlarýn Farký " + (a - b));
     }
 
+    void Cikarma(int a, int b, int c)
+    {
+        print("sayýlarýn Farký " + (a - b - c));
+    }
     public void Carpma(int a, int b)
     {
         print("sayýlarýn Çarpýmý " + (a * b));
     }
-     public void Bolme(int a, int b)
+    public void Bolme(int a, int b)
     {
         print("sayýlarýn Bölümü " + (a / b));
     }
+
+
+
 
     private void Update()
     {
