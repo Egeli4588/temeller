@@ -400,19 +400,61 @@ public class temeller : MonoBehaviour
 
         // faktöriyel sorusunu birde while çözelim.
 
-        int result = 1;
-        int j = 1;
+        /* int result = 1;
+         int j = 1;
 
-        while (j<=girilenSayim)
-        {
-         result*= j;
-            j++;
+         while (j<=girilenSayim)
+         {
+          result*= j;
+             j++;
+         }
+        // Debug.Log(result);
+        */
+
+        //Diziler (Arrays)
+
+         /* string[] isimler = new string[12];
+
+        isimler[0] = "Hira";
+        isimler[1] = "Elif";
+        isimler[2] = "Buse";
+        isimler[3] = "Mustafa Ateþ";
+        isimler[4] = "Mustafa Ayýk";
+        isimler[5] = "izem";
+        isimler[6] = "kübra";
+        isimler[7] = "Sudem";
+        isimler[8] = "Ahmet";
+        isimler[9] = "Berat";
+        isimler[10] = "esma";
+        isimler[11] = "neslihan";
+
+        Debug.Log(isimler[5]);
+        //
+        for (int i = 0; i < isimler.Length; i++)
+        { 
+          //  Debug.Log(isimler[i]);
         }
-        Debug.Log(result);
+         
+          */
 
 
+       /* string[] names = { "Ali", "veli", "hasan", "hüseyin" };
+        //diziden rastgele bir eleman seçelim
+        int randomIndex=Random.Range(0, names.Length);
+        string randomName = names[randomIndex];
+        //Debug.Log(randomName);
+       */
+       /* int[] sayilar = { 10, 20, 30, 40, 50 };
+
+        for (int i = 0; i < sayilar.Length; i++)
+        {
+
+           // Debug.Log(sayilar[i]);
+        }
+       */
 
 
+       
 
 
 
