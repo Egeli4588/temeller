@@ -18,6 +18,13 @@ public class temeller : MonoBehaviour
     [SerializeField] public int bagajKilo;
     [SerializeField] public int urun1;
     [SerializeField] public int urun2;
+
+    [SerializeField] public int sayim1;
+    [SerializeField] public int sayim2;
+    [SerializeField] public string secim;
+    int sonuc = 0;
+
+    [SerializeField] public int gun;
     private void Start()
     {
         //Giriþ
@@ -252,20 +259,75 @@ public class temeller : MonoBehaviour
 
         //çözüm 4
 
-       /* int toplamTutar = urun1 + urun2;
+        /* int toplamTutar = urun1 + urun2;
 
-        if (toplamTutar <= 200) 
+         if (toplamTutar <= 200) 
+         {
+             Debug.Log("Toplam Tutar : " + toplamTutar + "Tl");
+
+         }
+         else
+         {
+             int indirim=(toplamTutar*25)/100;
+             toplamTutar = toplamTutar - indirim;
+             Debug.Log("indirim Tutarýnýz : " + toplamTutar);
+         }*/
+
+        // switch -case 
+        //girilen iki sayýyý 4 iþlemi yaptýralým
+        /* switch (secim)
+         {
+             case "+":
+                  sonuc = sayim1 + sayim2;
+                // Debug.Log(sonuc);
+                 break;
+             case "-":
+                  sonuc = sayim1 - sayim2;
+               //  Debug.Log(sonuc);
+                 break;
+             case "*":
+                  sonuc = sayim1 * sayim2;
+               //  Debug.Log(sonuc);
+                 break;
+             case "/":
+                 sonuc = sayim1 / sayim2;
+                 Debug.Log(sonuc);
+               break;
+             default:
+                 Debug.Log("yanlýþ seçim yaptýnz");
+                 break;
+         }
+        */
+
+        //haftanýn günlerini yazdýralým.
+
+        switch (gun)
         {
-            Debug.Log("Toplam Tutar : " + toplamTutar + "Tl");
-
+            case 1:
+                Debug.Log("Pazartesi");
+                break;
+            case 2:
+                Debug.Log("salý");
+                break;
+            case 3:
+                Debug.Log("Çarþamba");
+                break;
+            case 4:
+                Debug.Log("Perþembe");
+                break;
+            case 5:
+                Debug.Log("Cuma");
+                break;
+            case 6:
+                Debug.Log("Cumartesi");
+                break;
+            case 7:
+                Debug.Log("Pazar");
+                break;
+            default:
+                Debug.Log("böyle bir gün yok");
+                break;
         }
-        else
-        {
-            int indirim=(toplamTutar*25)/100;
-            toplamTutar = toplamTutar - indirim;
-            Debug.Log("indirim Tutarýnýz : " + toplamTutar);
-        }*/
-
 
 
 
