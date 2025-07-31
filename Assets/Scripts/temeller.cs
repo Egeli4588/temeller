@@ -16,6 +16,8 @@ public class temeller : MonoBehaviour
     [SerializeField] public int aci2;
     [SerializeField] public int aci3;
     [SerializeField] public int bagajKilo;
+    [SerializeField] public int urun1;
+    [SerializeField] public int urun2;
     private void Start()
     {
         //Giriþ
@@ -235,17 +237,35 @@ public class temeller : MonoBehaviour
 
         //çözüm 3
 
-       /* int aradakiTutar = bagajKilo - 20;
-        if (bagajKilo <= 20) 
+        /* int aradakiTutar = bagajKilo - 20;
+         if (bagajKilo <= 20) 
+         {
+             Debug.Log("herhangi bir ücret ödemeniz gerekmiyor");
+         }
+         else
+         {
+             aradakiTutar *= 10;
+             Debug.Log("bagajýnýz için ödemeniz gereken tutar: " + aradakiTutar+"TL");
+         }
+        */
+
+
+        //çözüm 4
+
+       /* int toplamTutar = urun1 + urun2;
+
+        if (toplamTutar <= 200) 
         {
-            Debug.Log("herhangi bir ücret ödemeniz gerekmiyor");
+            Debug.Log("Toplam Tutar : " + toplamTutar + "Tl");
+
         }
         else
         {
-            aradakiTutar *= 10;
-            Debug.Log("bagajýnýz için ödemeniz gereken tutar: " + aradakiTutar+"TL");
-        }
-       */
+            int indirim=(toplamTutar*25)/100;
+            toplamTutar = toplamTutar - indirim;
+            Debug.Log("indirim Tutarýnýz : " + toplamTutar);
+        }*/
+
 
 
 
