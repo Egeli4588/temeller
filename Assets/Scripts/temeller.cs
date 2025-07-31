@@ -123,15 +123,27 @@ public class temeller : MonoBehaviour
         */
 
         // iliþkisel operatörler   <, >, <=, >=, != ,==
-      /*  int sayi1 = 15;
-        int sayi2 = 25;
-        Debug.Log(sayi1 > sayi2);
-        Debug.Log(sayi1 < sayi2);
-        Debug.Log(sayi1 <= sayi2);
-        Debug.Log(sayi1 >= sayi2);
-        Debug.Log(sayi1 != sayi2); // != Eþit deðilse 
-        Debug.Log(sayi1 == sayi2); // == Eþitse 
-      */
+        /*  int sayi1 = 15;
+          int sayi2 = 25;
+          Debug.Log(sayi1 > sayi2);
+          Debug.Log(sayi1 < sayi2);
+          Debug.Log(sayi1 <= sayi2);
+          Debug.Log(sayi1 >= sayi2);
+          Debug.Log(sayi1 != sayi2); // != Eþit deðilse 
+          Debug.Log(sayi1 == sayi2); // == Eþitse 
+        */
+
+        //Mantýksal Operatörler  && (ve)(and)  || (veya) or
+        /* string kullaniciAdi = "ertev";
+         string sifre = "1234";
+         Debug.Log(kullaniciAdi == "ertev" && sifre == "1234");
+        */
+        /*string kullaniciAdi = "ertev";
+        string sifre = "1234";
+        Debug.Log(kullaniciAdi == "ertev1" || sifre == "1234");
+        */
+
+
 
 
 
