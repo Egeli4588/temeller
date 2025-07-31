@@ -152,6 +152,9 @@ MonoBehaviour:
   isDeath: 1
   say1: 15
   say2: 25
+  girilensayi: -5
+  sinav1: 50
+  sinav2: 55
 --- !u!4 &224078567
 Transform:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using UnityEditor;
 using UnityEngine;
 
 public class temeller : MonoBehaviour
@@ -8,6 +9,9 @@ public class temeller : MonoBehaviour
     [SerializeField] public int say1;
     [SerializeField] public int say2;
     [SerializeField] public int girilensayi;
+    [SerializeField] public int sinav1;
+    [SerializeField] public int sinav2;
+    [SerializeField] public int performansNotu;
     private void Start()
     {
         //Giriþ
@@ -172,16 +176,46 @@ public class temeller : MonoBehaviour
 
         // girilen sayýný(unity arayüzü) negatif-pozitif veya  sýfýra eþit olma durmunu kotrom eden kodlar
 
-        if (girilensayi > 0) 
+        /* if (girilensayi > 0)
+         {
+             Debug.Log("sayý poztiftir");
+         }
+         else if (girilensayi < 0)
+         {
+             Debug.Log("sayý negatiftir");
+         }
+         else
+         {
+             Debug.Log("sayý Sýfýrdýr");
+         }
+        */
+        /*Kullanýcýdan iki sýnav ve bir performans notu girmesini isteyiniz. Girilen 3 notun ortalamasý 50 ve daha
+         büyükse “Baþarýlý”; deðilse “Baþarýsýz” çýktýlarý veren kodu yazýnýz.
+         
+        b) Bir üçgenin iç açýlarý toplamý 180 derecedir. Kullanýcýnýn girdiði üç açý deðerine göre “Bu bir üçgendir.” ya
+           da “Bu bir üçgen deðildir.” çýktýlarý veren kodu yazýnýz.
+        
+        c) Bir hava yolu firmasý en fazla 20 kilogram bagaj hakký vermektedir. 20 kilogramdan sonraki her kilogram
+           için 10 TL ek ücret almaktadýr. Buna göre bagajý 20 kg ya da daha az olan yolculara “Herhangi bir ücret
+           ödemeniz gerekmiyor.”; 20 kg’den fazla olanlar için de ne kadar ek ücret ödeneceðini hesaplayarak “Fazla
+           bagaj için ….. TL ödemelisiniz.” çýktýlarýný veren kodu yazýnýz.
+           Not: Bu soruda kilogram hesabýnda sadece tam sayýlarý dikkate alýnýz. Örneðin 28,70 kilogram olan bagaj
+           için sadece 8 kg için ek ücret ödenmesi yeterlidir.
+        
+        ç) Kullanýcýnýn girdiði iki ürünün toplam fiyatý 200 TL ve altýysa “Ödenecek miktar=…. TL”; 200 TL’yi geçerse
+          %25 indirim yaparak “Ödenecek miktar, indirimden sonra ….. TL’dir.” çýktýlarýný veren kodu yazýnýz.  */
+
+        //ÇözümBir
+        int toplam = sinav1 + sinav2+performansNotu;
+        float ortalama = toplam / 3f;
+        if (ortalama >= 50)
         {
-            Debug.Log("sayý poztiftir");
-        } else if (girilensayi < 0) 
-        {
-            Debug.Log("sayý negatiftir");
+            Debug.Log("Baþarýlý");
         }
         else
         {
-            Debug.Log("sayý Sýfýrdýr");
+
+            Debug.Log("Baþarýsýz");
         }
 
 
