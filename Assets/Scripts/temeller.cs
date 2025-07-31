@@ -15,6 +15,7 @@ public class temeller : MonoBehaviour
     [SerializeField] public int aci1;
     [SerializeField] public int aci2;
     [SerializeField] public int aci3;
+    [SerializeField] public int bagajKilo;
     private void Start()
     {
         //Giriþ
@@ -223,14 +224,28 @@ public class temeller : MonoBehaviour
         */
         //çözüm2
 
-        if ((aci1 + aci2 + aci3) == 180)
+        /* if ((aci1 + aci2 + aci3) == 180)
+         {
+             Debug.Log("üçgendir");
+         }
+         else 
+         {
+             Debug.Log("Üçgen deðildir");
+         }*/
+
+        //çözüm 3
+
+       /* int aradakiTutar = bagajKilo - 20;
+        if (bagajKilo <= 20) 
         {
-            Debug.Log("üçgendir");
+            Debug.Log("herhangi bir ücret ödemeniz gerekmiyor");
         }
-        else 
+        else
         {
-            Debug.Log("Üçgen deðildir");
+            aradakiTutar *= 10;
+            Debug.Log("bagajýnýz için ödemeniz gereken tutar: " + aradakiTutar+"TL");
         }
+       */
 
 
 
