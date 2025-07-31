@@ -155,6 +155,20 @@ MonoBehaviour:
   girilensayi: -5
   sinav1: 50
   sinav2: 55
+  performansNotu: 55
+  aci1: 60
+  aci2: 60
+  aci3: 70
+  bagajKilo: 25
+  urun1: 100
+  urun2: 200
+  sayim1: 20
+  sayim2: 20
+  secim: +
+  gun: 4
+  baslangicSayisi: 2
+  bitisSayisi: 4
+  girilenSayi: 2
 --- !u!4 &224078567
 Transform:
   m_ObjectHideFlags: 0

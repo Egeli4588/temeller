@@ -25,6 +25,15 @@ public class temeller : MonoBehaviour
     int sonuc = 0;
 
     [SerializeField] public int gun;
+    string unity6 = "Unity6";
+    string newText = "";
+
+
+    [SerializeField] public int baslangicSayisi;
+    [SerializeField] public int bitisSayisi;
+
+
+    [SerializeField] public int girilenSayi;
     private void Start()
     {
         //Giriþ
@@ -301,33 +310,83 @@ public class temeller : MonoBehaviour
 
         //haftanýn günlerini yazdýralým.
 
-        switch (gun)
+        /*  switch (gun)
+          {
+              case 1:
+                  Debug.Log("Pazartesi");
+                  break;
+              case 2:
+                  Debug.Log("salý");
+                  break;
+              case 3:
+                  Debug.Log("Çarþamba");
+                  break;
+              case 4:
+                  Debug.Log("Perþembe");
+                  break;
+              case 5:
+                  Debug.Log("Cuma");
+                  break;
+              case 6:
+                  Debug.Log("Cumartesi");
+                  break;
+              case 7:
+                  Debug.Log("Pazar");
+                  break;
+              default:
+                  Debug.Log("böyle bir gün yok");
+                  break;
+          } */
+
+        // string sorularý
+        // hard code (start içinde tanýmlayýn)
+        // Bir string oluþturun ardýndan bu stringin arasýnda bir boþluk olacak þekilde ekrana yazdýralým
+
+
+        // Unity6 stringinin içinden 6 çýkartalým ve kaç harf olduðunu yazdýralým
+
+        /*  string kurum = "ERTEV";
+          string sonuc = "";
+          foreach (char harf in kurum)
+          {
+              sonuc += harf + " ";
+          }
+         // Debug.Log(sonuc);
+        */
+
+        //cycles Döngüler
+
+        for (int i = 0; i < 10; i++)
         {
-            case 1:
-                Debug.Log("Pazartesi");
-                break;
-            case 2:
-                Debug.Log("salý");
-                break;
-            case 3:
-                Debug.Log("Çarþamba");
-                break;
-            case 4:
-                Debug.Log("Perþembe");
-                break;
-            case 5:
-                Debug.Log("Cuma");
-                break;
-            case 6:
-                Debug.Log("Cumartesi");
-                break;
-            case 7:
-                Debug.Log("Pazar");
-                break;
-            default:
-                Debug.Log("böyle bir gün yok");
-                break;
+            Debug.Log(i);
         }
+        // baþlangýç ve bitiþ sayýsýný unity arayüzünden aldým bunlarýn arasýndaki sayýlarý toplatalým
+        /*  int toplam = 0;
+          int dongusayisi = 0;
+          for (int i = baslangicSayisi;i <= bitisSayisi; i++) 
+          {
+              // ?
+            //  dongusayisi++;
+            //  Debug.Log(i);
+            //  toplam += i;
+
+
+          }
+        //  Debug.Log("Aralýktaki sayýlarýn Toplamý :" + toplam);
+        //  Debug.Log("Aralýktaki sayýlarýn Ortalmasý :" + toplam / dongusayisi);
+
+          // girilen sayýnýn faktöriyelini hesapyýnýz for döngüsü ile
+        */
+        int mysonuc = 1;
+        for (int i = 1; i <= girilensayi; i++)
+        {
+            mysonuc *= i;
+
+        }
+        Debug.Log("Faktöriyel :" + mysonuc);
+
+
+
 
 
 
