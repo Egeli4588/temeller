@@ -414,51 +414,51 @@ public class temeller : MonoBehaviour
 
         //Diziler (Arrays)
 
-         /* string[] isimler = new string[12];
+        /* string[] isimler = new string[12];
 
-        isimler[0] = "Hira";
-        isimler[1] = "Elif";
-        isimler[2] = "Buse";
-        isimler[3] = "Mustafa Ateþ";
-        isimler[4] = "Mustafa Ayýk";
-        isimler[5] = "izem";
-        isimler[6] = "kübra";
-        isimler[7] = "Sudem";
-        isimler[8] = "Ahmet";
-        isimler[9] = "Berat";
-        isimler[10] = "esma";
-        isimler[11] = "neslihan";
+       isimler[0] = "Hira";
+       isimler[1] = "Elif";
+       isimler[2] = "Buse";
+       isimler[3] = "Mustafa Ateþ";
+       isimler[4] = "Mustafa Ayýk";
+       isimler[5] = "izem";
+       isimler[6] = "kübra";
+       isimler[7] = "Sudem";
+       isimler[8] = "Ahmet";
+       isimler[9] = "Berat";
+       isimler[10] = "esma";
+       isimler[11] = "neslihan";
 
-        Debug.Log(isimler[5]);
-        //
-        for (int i = 0; i < isimler.Length; i++)
-        { 
-          //  Debug.Log(isimler[i]);
-        }
-         
-          */
+       Debug.Log(isimler[5]);
+       //
+       for (int i = 0; i < isimler.Length; i++)
+       { 
+         //  Debug.Log(isimler[i]);
+       }
+
+         */
 
 
-       /* string[] names = { "Ali", "veli", "hasan", "hüseyin" };
-        //diziden rastgele bir eleman seçelim
-        int randomIndex=Random.Range(0, names.Length);
-        string randomName = names[randomIndex];
-        //Debug.Log(randomName);
-       */
-       /* int[] sayilar = { 10, 20, 30, 40, 50 };
+        /* string[] names = { "Ali", "veli", "hasan", "hüseyin" };
+         //diziden rastgele bir eleman seçelim
+         int randomIndex=Random.Range(0, names.Length);
+         string randomName = names[randomIndex];
+         //Debug.Log(randomName);
+        */
+        /* int[] sayilar = { 10, 20, 30, 40, 50 };
 
-        for (int i = 0; i < sayilar.Length; i++)
-        {
+         for (int i = 0; i < sayilar.Length; i++)
+         {
 
-           // Debug.Log(sayilar[i]);
-        }
-       */
+            // Debug.Log(sayilar[i]);
+         }
+        */
 
 
         // List kullanýmý 
 
-       
-         List<int> numbers = new List<int>();
+
+        /* List<int> numbers = new List<int>();
         numbers.Add(1);
         numbers.Add(2);
         numbers.Add(3);
@@ -502,6 +502,7 @@ public class temeller : MonoBehaviour
             print(m);
 
         }
+
         isimler.Insert(0, "neslihan");
         foreach (string n in isimler)
         {
@@ -524,22 +525,41 @@ public class temeller : MonoBehaviour
             Debug.Log(n);
         }
 
+        */
 
+        // Metodlar (Fonksiyonlar)
 
+        /* for (int i = 0; i < 10; i++)
+         {
+             Ilkfonksiyonum();
+         }
+        */
 
-
-
+        Ilkfonksiyonum();
+        
+        // parametre alan deðer döndürmeyen foknsiyon kullanarak 4 iþlemi gerçekleþtiren fonksiyonlarý yazýnýz
 
 
 
 
     }
+
+    void Ilkfonksiyonum()
+    {
+        Debug.Log("merhaba bu benim ilk fonksiyonum");
+    }
+
+
+
+
+
     private void Update()
     {
         // Debug.Log("Puan : " + puan);// konsola mesaj verdiriyoruz.
 
-
     }
+
+
 
 
 }
