@@ -33,7 +33,7 @@ public class temeller : MonoBehaviour
     [SerializeField] public int bitisSayisi;
 
 
-    [SerializeField] public int girilenSayi;
+    [SerializeField] public int girilenSayim;
     private void Start()
     {
         //Giriþ
@@ -356,10 +356,10 @@ public class temeller : MonoBehaviour
 
         //cycles Döngüler
 
-        for (int i = 0; i < 10; i++)
+      /*  for (int i = 0; i < 10; i++)
         {
             Debug.Log(i);
-        }
+        }*/
         // baþlangýç ve bitiþ sayýsýný unity arayüzünden aldým bunlarýn arasýndaki sayýlarý toplatalým
         /*  int toplam = 0;
           int dongusayisi = 0;
@@ -377,13 +377,16 @@ public class temeller : MonoBehaviour
 
           // girilen sayýnýn faktöriyelini hesapyýnýz for döngüsü ile
         */
+
+
         int mysonuc = 1;
-        for (int i = 1; i <= girilensayi; i++)
+        for (int i = 1; i <= girilenSayim; i++)
         {
+            Debug.Log(i);
             mysonuc *= i;
 
         }
-        Debug.Log("Faktöriyel :" + mysonuc);
+        Debug.Log("Hesaplanan sayý :" + mysonuc);
 
 
 

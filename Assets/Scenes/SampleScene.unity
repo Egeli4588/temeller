@@ -168,7 +168,7 @@ MonoBehaviour:
   gun: 4
   baslangicSayisi: 2
   bitisSayisi: 4
-  girilenSayi: 2
+  girilenSayim: 5
 --- !u!4 &224078567
 Transform:
   m_ObjectHideFlags: 0
