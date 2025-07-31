@@ -7,6 +7,7 @@ public class temeller : MonoBehaviour
     public bool isDeath;
     [SerializeField] public int say1;
     [SerializeField] public int say2;
+    [SerializeField] public int girilensayi;
     private void Start()
     {
         //Giriþ
@@ -133,15 +134,57 @@ public class temeller : MonoBehaviour
           Debug.Log(sayi1 == sayi2); // == Eþitse 
         */
 
-        //Mantýksal Operatörler  && (ve)(and)  || (veya) or
+        //Mantýksal Operatörler  && (ve)(and)  || (veya) or  !
         /* string kullaniciAdi = "ertev";
          string sifre = "1234";
          Debug.Log(kullaniciAdi == "ertev" && sifre == "1234");
         */
-        /*string kullaniciAdi = "ertev";
+        /* string kullaniciAdi = "ertev";
         string sifre = "1234";
         Debug.Log(kullaniciAdi == "ertev1" || sifre == "1234");
         */
+
+        /* int a = 5;
+         int b = 10;
+         Debug.Log(!(a == b));
+        */
+
+        // Tür dönüþümleri (casting)
+
+        /* float ondalikSayi = 10 / 3f;
+        Debug.Log(ondalikSayi);
+        Debug.Log((int)ondalikSayi);
+       */
+
+        // Karar Yapýlarý  if-else
+
+        /* int yas = 18;
+         if (yas >= 18)
+         {
+             Debug.Log("Yertiþkindir");
+
+         }
+         else
+         {
+             Debug.Log("yetiþkin deðildir");
+         }
+        */
+
+        // girilen sayýný(unity arayüzü) negatif-pozitif veya  sýfýra eþit olma durmunu kotrom eden kodlar
+
+        if (girilensayi > 0) 
+        {
+            Debug.Log("sayý poztiftir");
+        } else if (girilensayi < 0) 
+        {
+            Debug.Log("sayý negatiftir");
+        }
+        else
+        {
+            Debug.Log("sayý Sýfýrdýr");
+        }
+
+
 
 
 
