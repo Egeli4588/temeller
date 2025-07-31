@@ -536,7 +536,10 @@ public class temeller : MonoBehaviour
         */
 
         Ilkfonksiyonum();
-        
+        Toplama(5, 8);
+        Cikarma(10, 5);
+        Carpma(11, 5);
+        Bolme(12, 3);
         // parametre alan deðer döndürmeyen foknsiyon kullanarak 4 iþlemi gerçekleþtiren fonksiyonlarý yazýnýz
 
 
@@ -549,9 +552,25 @@ public class temeller : MonoBehaviour
         Debug.Log("merhaba bu benim ilk fonksiyonum");
     }
 
+    public void Toplama(int a, int b)
+    {
 
+        print("sayýlarýn Toplamý " + (a + b));
 
+    }
+    public void Cikarma(int a, int b)
+    {
+        print("sayýlarýn Farký " + (a - b));
+    }
 
+    public void Carpma(int a, int b)
+    {
+        print("sayýlarýn Çarpýmý " + (a * b));
+    }
+     public void Bolme(int a, int b)
+    {
+        print("sayýlarýn Bölümü " + (a / b));
+    }
 
     private void Update()
     {
