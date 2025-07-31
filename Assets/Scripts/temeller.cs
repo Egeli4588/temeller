@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -454,10 +455,74 @@ public class temeller : MonoBehaviour
        */
 
 
+        // List kullanýmý 
+
        
+         List<int> numbers = new List<int>();
+        numbers.Add(1);
+        numbers.Add(2);
+        numbers.Add(3);
+        numbers.Add(4);
+        numbers.Add(5);
+        numbers.Add(6);
+        numbers.Add(7);
+        numbers.Add(8);
+        numbers.Add(9);
+        numbers.Add(10);
+        foreach (int i in numbers) 
+        {
+          print(i);
+        }
 
+       List<string> isimler = new List<string>();
 
+        isimler.Add("hira");
+        isimler.Add("elif");
+        isimler.Add("Ege");
+        isimler.Add("m ateþ");
+        isimler.Add("m ayýk");
+        isimler.Add("izem");
+        isimler.Add("kübra");
+        isimler.Add("sudem");
+        isimler.Add("berat");
+        isimler.Add("ahmet");
+        isimler.Add("esma");
+        isimler.Add("neslihan");
 
+        foreach (string s in isimler) 
+        {
+            print(s);
+        
+        }
+
+        isimler.Remove("neslihan");
+
+        foreach (string m in isimler)
+        {
+            print(m);
+
+        }
+        isimler.Insert(0, "neslihan");
+        foreach (string n in isimler)
+        {
+            print(n);
+
+        }
+
+        if (isimler.Contains("Ali")) 
+        {
+            Debug.Log("Ali Bulundu");
+        }
+        else
+        {
+            Debug.Log("Ali Bulunamadý");
+        }
+
+        numbers.Clear();//listeyi temizledik.
+        foreach (int n in numbers) 
+        {
+            Debug.Log(n);
+        }
 
 
 
