@@ -356,10 +356,10 @@ public class temeller : MonoBehaviour
 
         //cycles Döngüler
 
-      /*  for (int i = 0; i < 10; i++)
-        {
-            Debug.Log(i);
-        }*/
+        /*  for (int i = 0; i < 10; i++)
+          {
+              Debug.Log(i);
+          }*/
         // baþlangýç ve bitiþ sayýsýný unity arayüzünden aldým bunlarýn arasýndaki sayýlarý toplatalým
         /*  int toplam = 0;
           int dongusayisi = 0;
@@ -379,18 +379,36 @@ public class temeller : MonoBehaviour
         */
 
 
-        int mysonuc = 1;
-        for (int i = 1; i <= girilenSayim; i++)
+        /* int mysonuc = 1;
+         for (int i = 1; i <= girilenSayim; i++)
+         {
+             Debug.Log(i);
+             mysonuc *= i;
+
+         }
+         Debug.Log("Hesaplanan sayý :" + mysonuc);
+
+         */
+
+        /* int i = 0;
+         while (i<=10) 
+         {
+             Debug.Log(i);
+             i++;
+         }
+        */
+
+        // faktöriyel sorusunu birde while çözelim.
+
+        int result = 1;
+        int j = 1;
+
+        while (j<=girilenSayim)
         {
-            Debug.Log(i);
-            mysonuc *= i;
-
+         result*= j;
+            j++;
         }
-        Debug.Log("Hesaplanan sayý :" + mysonuc);
-
-
-
-
+        Debug.Log(result);
 
 
 
